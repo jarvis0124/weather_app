@@ -4,10 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global weather</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- linking tailwind output css file -->
+    <link rel="stylesheet" href="output.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <header class="w-full flex bg-blue-600 align-middle min-h-[40px]">
+        <h2 class="text-white text-2xl font-bold text-center-center m-auto ">Global weather</h2>
+    </header>
+    <div id="container">
+        <div id="top" class="border flex h-[300px]">
+            <!-- left will contain input and buttons -->
+            <div id="left" class="w-1/2 h-fit m-2" >
+                <h2 class="text-2xl">Enter you city</h2> <br>
+                <input type="text" name="location" id="location" placeholder="Location here..." class="border-2  w-[200px] h-[40px]"> <br><br>
+                <button id="enter" class="border-1 border-black w-[200px] h-[40px] font-bold hover:bg-black hover:text-white" >Enter</button> <br><br>
+                <button id="geoLocation" class="border-1 border-black w-[200px]  h-[40px]  font-bold  hover:bg-black hover:text-white">Get Location</button><br>
+            </div>
+            <!-- right will contain todays weather -->
+            <div id="right" class="w-1/1 border-1">
+                <!-- li stands for left info -->
+            <div id="li">
+                <div class="flex gap-1.5">
+
+                <p>Date:-</p><p id="date_0"></p>
+                <p>Sunrise:-</p><p id="srise_0"></p>
+                <p>sunset:- </p><p id="sset_0"></p>
+                
+                </div>
+                <p>Avg humidity</p><p id="humid_0"></p>
+                <p>Avg Temp celcius</p><p id="temp_0"></p>
+                <p>UV index</p><p id="uv_0"></p>
+                <p>location</p><p id="location_0"></p>
+            </div>
+            </div>
+        </div>
+        <div id="bottom" class="flex flex-wrap" >
+            <div id="card_1" class="border-4 border-purple-500 w-[200px] h-[250px] m-1.5">
+                 <p>Date:-</p><p id="date_1"></p>
+                 <p>Avg Temp celcius</p><p id="temp_1"></p>
+                 <p>Avg humidity</p><p id="humid_1"></p>
+                 <p>UV index</p><p id="uv_1"></p>
+            </div>
+                <div id="card_2"class="border-4 border-purple-500 w-[200px] h-[250px] m-1.5">
+                 <p>Date:-</p><p id="date_2"></p>
+                 <p>Avg Temp celcius</p><p id="temp_2"></p>
+                 <p>Avg humidity</p><p id="humid_2"></p>
+                 <p>UV index</p><p id="uv_2"></p>
+            </div>
+                 <div id="card_3" class="border-4 border-purple-500 w-[200px] h-[250px] m-1.5" >
+                 <p>Date:-</p><p id="date_3"></p>
+                 <p>Avg Temp celcius</p><p id="temp_3"></p>
+                 <p>Avg humidity</p><p id="humid_3"></p>
+                 <p>UV index</p><p id="uv_3"></p>
+            </div>
+                <div id="card_4" class="border-4 border-purple-500 w-[200px] h-[250px] m-1.5" >
+                 <p>Date:-</p><p id="date_4"></p>
+                 <p>Avg Temp celcius</p><p id="temp_4"></p>
+                 <p>Avg humidity</p><p id="humid_4"></p>
+                 <p>UV index</p><p id="uv_4"></p>
+            </div>
+                 <div id="card_5" class="border-4 border-purple-500 w-[200px] h-[250px] m-1.5">
+                 <p>Date:-</p><p id="date_5"></p>
+                 <p>Avg Temp celcius</p><p id="temp_5"></p>
+                 <p>Avg humidity</p><p id="humid_5"></p>
+                 <p>UV index</p><p id="uv_5"></p>
+            </div>
+                <div id="card_6" class="border-4 border-purple-500 w-[200px] h-[250px] m-1.5" >
+                 <p>Date:-</p><p id="date_6"></p>
+                 <p>Avg Temp celcius</p><p id="temp_6"></p>
+                 <p>Avg humidity</p><p id="humid_6"></p>
+                 <p>UV index</p><p id="uv_6"></p>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 </html>
